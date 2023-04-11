@@ -81,30 +81,9 @@ The [instructions.md](instructions.md) file describes how to deploy Wazuh on Kub
             └── wazuh-worker-sts.yaml
 
 
-## Branches
-
-* `master` branch contains the latest code, be aware of possible bugs on this branch.
-* `stable` branch on correspond to the last Wazuh stable version.
-
 
 
 ## Local development
 
 To deploy a cluster on your local environment (like Minikube, Kind or Microk8s) read the instructions on [local-environment.md](local-environment.md).
-
-## Contribute
-
-If you want to contribute to our project please don't hesitate to send a pull request. You can also join our users [mailing list](https://groups.google.com/d/forum/wazuh) or the [Wazuh Slack community channel](https://wazuh.com/community/join-us-on-slack/) to ask questions and participate in discussions.
-
-## Credits and Thank you
-
-Based on the previous work from JPLachance [coveo/wazuh-kubernetes](https://github.com/coveo/wazuh-kubernetes) (2018/11/22).
-
-## License and copyright
-
-WAZUH
-Copyright (C) 2016, Wazuh Inc.  (License GPLv2)
-
-## References
-
-* [Wazuh website](http://wazuh.com)
+The official documentation did not metion about the creation of pv for wazuh indexer, wazuh manager-master and wazuh manager-worker. This repo have additional directory PV for the creation of pv.
